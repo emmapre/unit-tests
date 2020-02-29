@@ -4,5 +4,11 @@ const months = [
 ]
 
 export const monthName = (monthNumber) => {
-  return months[monthNumber]
+  if (monthNumber >= 1 && <= 12) {
+    return months[monthNumber]
+  } else {
+    return null
+  }
 }
+
+//om  index numret är mellan 0 och 11 så ska den ta visa det. annars null(hur visar den null?)
