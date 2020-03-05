@@ -1,5 +1,6 @@
 export const hashtags = (text) => {
 
-  text.match('#')
+  text.match(item => item.match("#"))
+
   return text
 }
